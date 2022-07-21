@@ -1,4 +1,4 @@
-color blue = #41ABBF, lightBlue = #2BC6EA, resetButtonColour, buttonFill; //Not Night Mode Friendly Colours
+color blue = #989600, lightBlue = #EDEB00, resetButtonColour, buttonFill; //Not Night Mode Friendly Colours
 //
 void buttonsDraw() {
   //Technically, there are four ways to code a mouse button press
@@ -19,4 +19,18 @@ void buttonsDraw() {
   fill(buttonFill);
   rect(buttonX2, buttonY2, buttonWidth2, buttonHeight2);
   fill(resetButtonColour);
+  //
+  fill(resetWhite);
+  //
+textAlign(CENTER, CENTER);
+titleSize = 31;
+textFont(titleFont, titleSize);
+text(title, buttonX1, buttonY1, buttonWidth1, buttonHeight1);
+fill(resetWhite);
+//
+textAlign(CENTER, CENTER);
+titleSize1 = 31;
+textFont(titleFont, titleSize1);
+text(title1, buttonX2, buttonY2, buttonWidth2, buttonHeight2);
+fill(resetWhite);
 }
